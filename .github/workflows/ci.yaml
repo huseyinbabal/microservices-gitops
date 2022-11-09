@@ -39,7 +39,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/${{ github.actor }}/echo-server
+          images: ghcr.io/${{ github.actor }}/echo-service
 
       - name: Build and push docker image
         uses: docker/build-push-action@v3
