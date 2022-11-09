@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+  name: "argo-repo"
+  namespaces: "argocd"
+  annotations: {}
+  labels:
+    argocd.argoproj.io/secret-type: repository
+
+  stringData:
+    type: git
+    url: https://github.com/huseyinbabal/microservices-gitops
