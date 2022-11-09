@@ -5,6 +5,10 @@ on:
       - 'echo-server/**'
     branches:
       - 'main'
+
+permissions:
+  packages: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
