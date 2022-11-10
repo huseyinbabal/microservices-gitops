@@ -3,11 +3,11 @@ kind: Secret
 type: Opaque
 metadata:
   name: "argo-repo"
-  namespaces: "argocd"
+  namespace: "argocd"
   annotations: {}
   labels:
     argocd.argoproj.io/secret-type: repository
 
-  stringData:
-    type: git
-    url: https://github.com/huseyinbabal/microservices-gitops
+stringData:
+  type: git
+  url: https://github.com/huseyinbabal/microservices-gitops
